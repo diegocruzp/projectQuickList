@@ -76,7 +76,7 @@ h2 {
 /* Input */
 .input-wrapper input {
     flex: 1;
-    min-width: 200px;
+    min-width: 0;
     padding: 10px 12px;
     border: 2px solid var(--border-color-primary);
     border-radius: var(--radius-md);

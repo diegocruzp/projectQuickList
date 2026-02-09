@@ -20,15 +20,15 @@
     
     <main>
         <div class="back">
-            <button class="btn-back">← Voltar</button>
+            <button class="btn-back" type="button">← Voltar</button>
         </div>
         
         <h2>Compras da semana</h2>
 
         <form>
              <div class="input-wrapper">
-                <input type="text" placeholder="Adicione um novo item">
-                <button class="btn-addItem"> Adicionar item</button>
+                <input id="newItem" name="newItem" type="text" placeholder="Adicione um novo item">
+                <button class="btn-addItem" type="submit"> Adicionar item</button>
             </div>
         </form>
 
@@ -37,31 +37,31 @@
                 <li class="list-item">
                     <input type="checkbox" class="item-checkbox">
                     <span class="item-text">Pão de forma</span>
-                    <button class="btn-delete" aria-label="Deletar item">🗑️</button>
+                    <button type="button" class="btn-delete" aria-label="Deletar item">🗑️</button>
                 </li>
                 <li class="list-item">
                     <input type="checkbox" class="item-checkbox">
                     <span class="item-text">Café preto</span>
-                    <button class="btn-delete" aria-label="Deletar item">🗑️</button>
+                    <button type="button" class="btn-delete" aria-label="Deletar item">🗑️</button>
                 </li>
                 <li class="list-item">
                     <input type="checkbox" class="item-checkbox">
                     <span class="item-text">Suco de laranja</span>
-                    <button class="btn-delete" aria-label="Deletar item">🗑️</button>
+                    <button type="button" class="btn-delete" aria-label="Deletar item">🗑️</button>
                 </li>
                 <li class="list-item">
                     <input type="checkbox" class="item-checkbox">
                     <span class="item-text">Bolacha</span>
-                    <button class="btn-delete" aria-label="Deletar item">🗑️</button>
+                    <button type="button" class="btn-delete" aria-label="Deletar item">🗑️</button>
                 </li>
             </ul>
         </section>
 
         <!-- Alerta de Ação -->
-        <div id="alertNotification" class="alert-notification">
+        <div id="alertNotification" class="alert-notification" role="status" aria-live="polite">
             <span class="alert-icon">⚠️</span>
             <span class="alert-text">Item foi removido da lista</span>
-            <button class="alert-close" aria-label="Fechar alerta">✕</button>
+            <button type="button" class="alert-close" aria-label="Fechar alerta">✕</button>
         </div>
 
     </main>

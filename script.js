@@ -5,7 +5,6 @@
 // Elementos do DOM
 const form = document.querySelector('form');
 const inputItem = document.querySelector('.input-wrapper input');
-const btnAddItem = document.querySelector('.btn-addItem');
 const shoppingList = document.getElementById('shoppingList');
 const alertNotification = document.getElementById('alertNotification');
 const alertCloseBtn = document.querySelector('.alert-close');
